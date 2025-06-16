@@ -1,2 +1,16 @@
 [16-Jun-2025 13:39:26 UTC] PHP Parse error:  syntax error, unexpected token "=" in C:\Users\joe\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\header.php on line 4
 [16-Jun-2025 13:39:51 UTC] PHP Parse error:  syntax error, unexpected token "=" in C:\Users\joe\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\header.php on line 4
+[16-Jun-2025 14:13:35 UTC] PHP Warning:  foreach() argument must be of type array|object, string given in C:\Users\joe\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php on line 95
+[16-Jun-2025 14:13:35 UTC] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, string given in C:\Users\joe\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php:102
+Stack trace:
+#0 C:\Users\joe\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php(102): array_merge(Array, 'headerMenuLocat...')
+#1 C:\Users\joe\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\functions.php(12): register_nav_menus('headerMenuLocat...', 'Header Menu Loc...')
+#2 C:\Users\joe\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(324): university_features('')
+#3 C:\Users\joe\Local Sites\fictional-university\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#4 C:\Users\joe\Local Sites\fictional-university\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\Users\joe\Local Sites\fictional-university\app\public\wp-settings.php(705): do_action('after_setup_the...')
+#6 C:\Users\joe\Local Sites\fictional-university\app\public\wp-config.php(103): require_once('C:\\Users\\joe\\Lo...')
+#7 C:\Users\joe\Local Sites\fictional-university\app\public\wp-load.php(50): require_once('C:\\Users\\joe\\Lo...')
+#8 C:\Users\joe\Local Sites\fictional-university\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\joe\\Lo...')
+#9 {main}
+  thrown in C:\Users\joe\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php on line 102
