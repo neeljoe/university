@@ -14,3 +14,18 @@ Stack trace:
 #8 C:\Users\joe\Local Sites\fictional-university\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\joe\\Lo...')
 #9 {main}
   thrown in C:\Users\joe\Local Sites\fictional-university\app\public\wp-includes\nav-menu.php on line 102
+[17-Jun-2025 13:24:51 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_timeout_wp_theme_files_patterns-1cdec4f408e9d3220351f7a3a760fda3', '1750168490', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option
+[17-Jun-2025 14:16:43 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "n" in C:\Users\joe\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\index.php:21
+Stack trace:
+#0 C:\Users\joe\Local Sites\fictional-university\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\joe\Local Sites\fictional-university\app\public\wp-blog-header.php(19): require_once('C:\\Users\\joe\\Lo...')
+#2 C:\Users\joe\Local Sites\fictional-university\app\public\index.php(17): require('C:\\Users\\joe\\Lo...')
+#3 {main}
+  thrown in C:\Users\joe\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\index.php on line 21
+[17-Jun-2025 14:16:57 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "n" in C:\Users\joe\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\index.php:21
+Stack trace:
+#0 C:\Users\joe\Local Sites\fictional-university\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\joe\Local Sites\fictional-university\app\public\wp-blog-header.php(19): require_once('C:\\Users\\joe\\Lo...')
+#2 C:\Users\joe\Local Sites\fictional-university\app\public\index.php(17): require('C:\\Users\\joe\\Lo...')
+#3 {main}
+  thrown in C:\Users\joe\Local Sites\fictional-university\app\public\wp-content\themes\fictional-university-theme\index.php on line 21
